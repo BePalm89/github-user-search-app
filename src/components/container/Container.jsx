@@ -1,6 +1,6 @@
-import Navbar from "../navbar/Navbar";
-import SearchBar from "../search-bar/SearchBar";
-import UserDatails from "../user-details/UserDetails";
+import Navbar from "../Navbar/Navbar";
+import SearchBar from "../SearchBar/SearchBar";
+import UserDatails from "../UserDetails/UserDetails";
 import "./Container.css";
 
 const Container = () => {
