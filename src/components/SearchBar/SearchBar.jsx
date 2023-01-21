@@ -4,13 +4,20 @@ const SearchBar = () => {
   return (
     <div className="search-bar-container">
       <form>
-        <ul className="menu">
-          <li className="item">
-            <img src="/assets/icon-search.svg" alt="icon-search"></img>
-            <input></input>
-          </li>
+        <ul className="menu-search-bar">
+          <div className="item-search-bar">
+            <li>
+              <img
+                src="/assets/icon-search.svg"
+                alt="icon-search"
+                className="icon-search"
+              ></img>
+              <input className="input-search"></input>
+            </li>
+          </div>
+
           <li>
-            <butto>Search</butto>
+            <button className="search-btn">Search</button>
           </li>
         </ul>
       </form>
