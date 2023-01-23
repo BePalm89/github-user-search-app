@@ -1,10 +1,17 @@
-import Container from "./components/Container/Container";
+import Container from "./components/Container/Container.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import SearchBar from "./components/SearchBar/SearchBar";
+import UserDatails from "./components/UserDetails/UserDetails";
+
 import "./App.css";
+
 function App() {
   return (
-    <div className="container">
-      <Container></Container>
-    </div>
+    <Container>
+      <Navbar />
+      <SearchBar />
+      <UserDatails />
+    </Container>
   );
 }
 
