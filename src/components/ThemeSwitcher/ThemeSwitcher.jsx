@@ -1,6 +1,9 @@
 const ThemeSwitcher = () => {
   return (
-    <img className="img-mode" src="/assets/icon-moon.svg" alt="moon"></img>
+    <div>
+      <span>DARK</span>
+      <img className="img-mode" src="/assets/icon-moon.svg" alt="moon"></img>
+    </div>
   );
 };
 

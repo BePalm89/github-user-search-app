@@ -8,9 +8,11 @@ import "./App.css";
 function App() {
   return (
     <Container>
-      <Navbar />
-      <SearchBar />
-      <UserDatails />
+      <div className="container-box">
+        <Navbar />
+        <SearchBar />
+        <UserDatails />
+      </div>
     </Container>
   );
 }

@@ -8,7 +8,6 @@ const Navbar = () => {
         <ul className="menu">
           <li className="item logo">Devfinder</li>
           <li className="item">
-            DARK
             <ThemeSwitcher />
           </li>
         </ul>
