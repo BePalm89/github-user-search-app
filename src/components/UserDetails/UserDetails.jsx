@@ -3,13 +3,13 @@ import "./UserDetails.css";
 const UserDatails = ({ user }) => {
   return (
     <div className="container-user-details">
-      <div>
+      <figure>
         <img
           src={user.avatar_url}
           alt="avatar-user"
           className="avatar-user-img"
         ></img>
-      </div>
+      </figure>
       <div className="user-details">
         <div className="row">
           <h3 className="user-name">{user?.name}</h3>
