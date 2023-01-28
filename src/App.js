@@ -19,11 +19,11 @@ function App() {
 
   return (
     <Container>
-      <div className="container-box">
+      <main className="container-box">
         <Navbar />
         <SearchBar onSubmit={handleOnSubmit} />
         <UserDatails user={user} />
-      </div>
+      </main>
     </Container>
   );
 }
