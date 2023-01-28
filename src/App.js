@@ -1,7 +1,7 @@
 import Container from "./components/Container/Container.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import SearchBar from "./components/SearchBar/SearchBar";
-import UserDatails from "./components/UserDetails/UserDetails";
+import UserDetails from "./components/UserDetails/UserDetails";
 import { useState } from "react";
 
 import "./App.css";
@@ -22,7 +22,7 @@ function App() {
       <main className="container-box">
         <Navbar />
         <SearchBar onSubmit={handleOnSubmit} />
-        <UserDatails user={user} />
+        <UserDetails user={user} />
       </main>
     </Container>
   );
