@@ -2,9 +2,11 @@ import Container from "./components/Container/Container.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import SearchBar from "./components/SearchBar/SearchBar";
 import UserDetails from "./components/UserDetails/UserDetails";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "./App.css";
+
+//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 -> github token
 
 function App() {
   const [user, setUser] = useState({});
@@ -13,9 +15,16 @@ function App() {
     if (userName) {
       fetch(`https://api.github.com/users/${userName}`)
         .then((response) => response.json())
-        .then((data) => setUser(data));
+        .then((data) => setUser(data))
+        .catch((error) => console.log(error));
     }
   }
+
+  useEffect((initialUserName = "BePalm89") => {
+    fetch(`https://api.github.com/users/${initialUserName}`)
+      .then((response) => response.json())
+      .then((data) => setUser(data));
+  }, []);
 
   return (
     <Container>
