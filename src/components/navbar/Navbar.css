@@ -1,18 +1,9 @@
 
-.menu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 18px;
-}
-
 .item {
     padding: 10px 0px;
     font-weight: 700;
     font-size: 13px;
-    color: #222731;
+    
 }
 
 .logo {

@@ -1,5 +1,16 @@
 import "./SearchBar.css";
 import { useState } from "react";
+import styled from "@emotion/styled";
+
+const SearchBarContainer = styled.div({
+  backgroundColor: "var(--colors-background-light)",
+  padding: "16px",
+  borderRadius: "4px",
+  boxShadow: "1px 4px #66000000",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+});
 
 const SearchBar = ({ onSubmit }) => {
   const [userName, setUserName] = useState("");
@@ -15,7 +26,7 @@ const SearchBar = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="search-bar-container">
+      <SearchBarContainer>
         <div>
           <img
             src="/assets/icon-search.svg"
@@ -33,7 +44,7 @@ const SearchBar = ({ onSubmit }) => {
         <button className="search-btn" type="submit">
           Search
         </button>
-      </div>
+      </SearchBarContainer>
     </form>
   );
 };

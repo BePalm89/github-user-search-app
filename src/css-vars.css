@@ -1,0 +1,15 @@
+
+
+body[data-theme='light'] {
+    --colors-primary: #222731;
+    --colors-primary-light: #4B6A9B;
+    --colors-background: #F6F8FF;
+    --colors-background-light: #FFFFFF;
+}
+
+body[data-theme='dark'] {
+    --colors-primary: #FFFFFF;
+    --colors-primary-light: #FFFFFF;
+    --colors-background: #141D2F;
+    --colors-background-light: #1E2A47;
+}

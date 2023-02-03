@@ -1,25 +1,20 @@
-.search-bar-container {
-    background-color: #fff;
-    padding: 16px;
-    border-radius: 4px;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 input:focus, input:active {
     border-color: inherit;
     outline: none;
 }
 
+::placeholder { 
+    color: var(--colors-primary);
+}
+
 .input-search {
     font-family: inherit;
     font-size: 18px;
-    color: #222731;
+
     width: 300px;
     border: none;
+    background-color: var(--colors-background-light);
 }
 
 .icon-search {

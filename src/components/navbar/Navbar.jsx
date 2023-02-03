@@ -1,16 +1,28 @@
 import "./Navbar.css";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import styled from "@emotion/styled";
+import "../../css-vars.css";
+
+const Menu = styled.ul({
+  listStyleType: "none",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "18px",
+  color: "var(--colors-primary)",
+});
 
 const Navbar = () => {
   return (
     <div className="navbar-container">
       <nav>
-        <ul className="menu">
+        <Menu>
           <li className="item logo">Devfinder</li>
           <li className="item">
             <ThemeSwitcher />
           </li>
-        </ul>
+        </Menu>
       </nav>
     </div>
   );

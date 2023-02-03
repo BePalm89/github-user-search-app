@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Space Mono', monospace;
-  background-color: #F6F8FF;
+  background-color: var(--colors-background);
 }
 
 .container-box {

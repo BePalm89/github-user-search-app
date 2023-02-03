@@ -1,9 +1,30 @@
 import "./UserDetails.css";
 import formatDate from "../../utils/date.js";
+import styled from "@emotion/styled";
+
+const UserDetailsContainer = styled.div({
+  marginTop: "24px",
+  backgroundColor: "var(--colors-background-light)",
+  boxShadow: "1px 4px #66000000",
+  borderRadius: "15px",
+  display: "flex",
+  flexDirection: "row",
+  padding: "36px",
+  gap: "24px",
+  color: "var(--colors-primary)",
+});
+
+const RowInfoBox = styled.div({
+  backgroundColor: "var(--colors-background)",
+  padding: "8px 24px",
+  display: "flex",
+  justifyContent: "space-between",
+  borderRadius: "10px",
+});
 
 const UserDetails = ({ user }) => {
   return (
-    <div className="container-user-details">
+    <UserDetailsContainer>
       <figure>
         <img
           src={user.avatar_url}
@@ -27,7 +48,7 @@ const UserDetails = ({ user }) => {
           </p>
         </div>
 
-        <div className="row-info-box">
+        <RowInfoBox>
           <div className="row-info">
             <p className="light-title">Repos</p>
             <p className="bold-text">{user.public_repos}</p>
@@ -40,7 +61,7 @@ const UserDetails = ({ user }) => {
             <p className="light-title">Following</p>
             <p className="bold-text">{user.following}</p>
           </div>
-        </div>
+        </RowInfoBox>
 
         <div className="info-details-wrapper">
           <div className="row-info-column">
@@ -130,7 +151,7 @@ const UserDetails = ({ user }) => {
         </div>
         <div className="info-details-wrapper"></div>
       </div>
-    </div>
+    </UserDetailsContainer>
   );
 };
 
