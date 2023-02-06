@@ -1,7 +1,5 @@
-import "./Navbar.css";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import styled from "@emotion/styled";
-import "../../css-vars.css";
 
 const Menu = styled.ul({
   listStyleType: "none",

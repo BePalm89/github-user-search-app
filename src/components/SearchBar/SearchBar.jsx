@@ -1,4 +1,3 @@
-import "./SearchBar.css";
 import { useState } from "react";
 import styled from "@emotion/styled";
 

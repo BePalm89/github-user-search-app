@@ -1,4 +1,3 @@
-import "./UserDetails.css";
 import formatDate from "../../utils/date.js";
 import styled from "@emotion/styled";
 
