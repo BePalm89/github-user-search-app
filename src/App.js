@@ -9,6 +9,7 @@ import "./App.css";
 //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 -> github token
 
 function App() {
+  const INITIAL_USER_NAME = "BePalm89";
   const [user, setUser] = useState({});
 
   function handleOnSubmit(userName) {
@@ -20,8 +21,8 @@ function App() {
     }
   }
 
-  useEffect((initialUserName = "BePalm89") => {
-    fetch(`https://api.github.com/users/${initialUserName}`)
+  useEffect(() => {
+    fetch(`https://api.github.com/users/${INITIAL_USER_NAME}`)
       .then((response) => response.json())
       .then((data) => setUser(data));
   }, []);
