@@ -8,8 +8,6 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { ErrorBoundary } from "react-error-boundary";
 
-//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 -> github token
-
 function App() {
   const INITIAL_USER_NAME = "BePalm89";
   const [user, setUser] = useState({});
