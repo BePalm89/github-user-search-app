@@ -10,7 +10,7 @@ const ThemeSwitcher = () => {
   }, [theme]);
 
   return (
-    <div class="theme-switcher-btn" onClick={() => setTheme(nextTheme)}>
+    <div className="theme-switcher-button" onClick={() => setTheme(nextTheme)}>
       <span>{nextTheme.toUpperCase()}</span>
       <img
         className="img-mode"

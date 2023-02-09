@@ -11,9 +11,8 @@ const SearchBarContainer = styled.div({
   alignItems: "center",
 });
 
-const SearchBar = ({ onSubmit }) => {
+const SearchBar = ({ noResult, onSubmit }) => {
   const [userName, setUserName] = useState("");
-
   function handleChange(event) {
     setUserName(event.target.value);
   }
@@ -40,6 +39,7 @@ const SearchBar = ({ onSubmit }) => {
             onChange={handleChange}
           ></input>
         </div>
+        <span className="no-result">{noResult} </span>
         <button className="search-btn" type="submit">
           Search
         </button>
